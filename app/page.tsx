@@ -1,98 +1,40 @@
 import Image from "next/image";
-
-function Header() {
-  return (
-    <header className="w-screen fixed h-24 md:h-32 bg-white z-20 shadow-inner-orange">
-      <div className="h-full flex items-center relative md:justify-center">
-        <button
-          className="md:hidden p-4 flex mr-auto mt-auto mb-auto"
-        >
-          <pre>  ☰</pre>
-        </button>
-        <ul className="h-full relative hidden md:flex gap-2 lg:gap-10 justify-center items-center">
-          <li className="border-black border-2">Пункт 1</li>
-          <li className="border-black border-2">Пункт 2</li>
-          <li className="border-black border-2">Пункт 3</li>
-          <li className="border-black border-2">Пункт 4</li>
-          <li className="ml-20 mr-20">
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width="250"
-              height="250"
-              className="absolute -translate-x-1/2 top-1/3 transform -mt-10"
-              priority
-            />
-          </li>
-          <li className="border-black border-2">Пункт 5</li>
-          <li className="border-black border-2">Пункт 6</li>
-          <li className="border-black border-2">Пункт 7</li>
-          <li className="border-black border-2">Пункт 8</li>
-        </ul>
-        <div className="absolute right-1 top-6 md:hidden w-1/3">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width="350"
-            height="350"
-            priority
-          />
-        </div>
-      </div>
-    </header >
-  )
-}
-
-function Footer() {
-  return (
-    <footer>
-      <div>by</div>
-    </footer>
-  )
-}
+import Greetings from "./components/Greetings/Greetings";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <Header />
-      <main className="pt-24 md:pt-32">
-        <div className="flex flex-col">
-          <div className="flex bg-red h-40vh md:h-70vh">
-            <Image
-              src="/plant1.jpg"
-              alt="Plant logo"
-              width="0"
-              height="0"
-              sizes="100vw"
-              className="w-full h-40vh md:h-70vh"
-              priority
-            />
-          </div>
-          <div className="flex flex-col md:flex-row md:h-60vh md:h-50vh overflow-hidden">
-            <div className="ml-auto mr-auto w-4/5 md:w-1/3 md:mt-auto md:mb-auto md:ml-auto flex flex-center items-center flex-col">
-              <h1 className="text-xl mb-5">Georgian House</h1>
-              1nam atque! Ea soluta excepturi labore, quis vero ipsum illum repellendus animi, fugit ratione tenetur fuga, consequatur blanditiis at aperiam magni dolores velit molestiae corporis maiores debitis officia? Iusto expedita tempora adipisci voluptate?
-            </div>
-            <Image
-              src="/translucent-image.png"
-              alt="Plant logo"
-              width="0"
-              height="0"
-              sizes="100vw"
-              className="w-3/5 md:w-6/12 md:-mt-14 ml-auto mr-auto"
-              priority
-            />
-          </div>
-        </div>
-      </main>
+      <Main />
+      <Footer />
       <div>111111111111111111111111111111111111111111</div>
       <div>1</div>
       <div>1</div>
       <div>1</div>
-      <Footer />
     </div>
   );
 }
+
+function Main() {
+  return (
+    <main className="pt-24 md:pt-32 flex flex-col">
+      <div>
+        <Image
+          src="/plant1.jpg"
+          alt="Plant logo"
+          width="0"
+          height="0"
+          sizes="100vw"
+          className="w-full h-40vh md:h-70vh"
+        />
+      </div>
+      <Greetings />
+    </main>
+  )
+}
+
 
 // "use client";
 
