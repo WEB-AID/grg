@@ -20,7 +20,7 @@ export default function Header() {
                             alt="logo"
                             width="250"
                             height="250"
-                            className="w-20vh lg:w-30vh absolute -translate-x-1/2 top-1/3 transform -mt-10"
+                            className="w-48 lg:w-64 absolute -translate-x-1/2 top-1/3 transform -mt-10"
                         />
                     </li>
                     <li className="border-black border-2">Пункт 5</li>
