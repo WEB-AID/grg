@@ -35,7 +35,6 @@ function Main() {
   )
 }
 
-
 // "use client";
 
 // import Image from "next/image";

@@ -17,7 +17,7 @@ export default function Greetings() {
                         width="0"
                         height="0"
                         sizes="100vw"
-                        className="border-2 border-black w-auto -mt-4 md:-mt-10"
+                        className="w-auto -mt-4 md:-mt-10"
                     />
                 </div>
             </div>
