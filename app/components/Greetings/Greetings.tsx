@@ -10,14 +10,14 @@ export default function Greetings() {
                     fugit ratione tenetur fuga, consequatur blanditiis at aperiam magni dolores velit
                     molestiae corporis maiores debitis officia? Iusto expedita tempora adipisci voluptate?
                 </article>
-                <div className="w-60vh md:w-1/2 max-[767px]:mx-auto">
+                <div className="w-60vh md:w-1/2 max-[767px]:mx-auto max-[767px]:px-0">
                     <Image
                         src="/translucent-image.png"
                         alt="Plant logo"
                         width="0"
                         height="0"
                         sizes="100vw"
-                        className="w-full -mt-4 md:-mt-10"
+                        className="w-auto -mt-4 md:-mt-10"
                     />
                 </div>
             </div>
