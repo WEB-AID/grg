@@ -19,7 +19,7 @@ export default function Home() {
 
 function Main() {
   return (
-    <main className="pt-24 md:pt-32 flex flex-col">
+    <main className="pt-24 lg:pt-32 flex flex-col">
       <div>
         <Image
           src="/plant1.jpg"
