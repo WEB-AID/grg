@@ -71,7 +71,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:h-60vh md:h-50vh overflow-hidden">
             <div className="ml-auto mr-auto w-4/5 md:w-1/3 md:mt-auto md:mb-auto md:ml-auto flex flex-center items-center flex-col">
               <h1 className="text-xl mb-5">Georgian House</h1>
-              nam atque! Ea soluta excepturi labore, quis vero ipsum illum repellendus animi, fugit ratione tenetur fuga, consequatur blanditiis at aperiam magni dolores velit molestiae corporis maiores debitis officia? Iusto expedita tempora adipisci voluptate?
+              1nam atque! Ea soluta excepturi labore, quis vero ipsum illum repellendus animi, fugit ratione tenetur fuga, consequatur blanditiis at aperiam magni dolores velit molestiae corporis maiores debitis officia? Iusto expedita tempora adipisci voluptate?
             </div>
             <Image
               src="/translucent-image.png"
