@@ -29,15 +29,15 @@ function Header() {
           <li className="border-black border-2">Пункт 7</li>
           <li className="border-black border-2">Пункт 8</li>
         </ul>
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width="250"
-          height="250"
-          sizes="25vw"
-          className="absolute right-4 top-4 max-[600px]:top-12 md:hidden w-1/4"
-          priority
-        />
+        <div className="absolute right-1 top-6 md:hidden w-1/3">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width="350"
+            height="350"
+            priority
+          />
+        </div>
       </div>
     </header >
   )
@@ -64,7 +64,7 @@ export default function Home() {
               width="0"
               height="0"
               sizes="100vw"
-              className="w-full h-auto z-10 h-60vh"
+              className="w-full h-40vh md:h-70vh"
               priority
             />
           </div>
