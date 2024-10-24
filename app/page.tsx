@@ -2,12 +2,12 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <header className="w-screen fixed h-24 md:h-32 bg-white z-20">
+    <header className="w-screen fixed h-24 md:h-32 bg-white z-20 shadow-inner-orange">
       <div className="h-full flex items-center relative md:justify-center">
         <button
-          className="md:hidden p-4 flex border-black border-2 mr-auto mt-auto mb-auto"
+          className="md:hidden p-4 flex mr-auto mt-auto mb-auto"
         >
-          ☰
+          <pre>  ☰</pre>
         </button>
         <ul className="h-full relative hidden md:flex gap-2 lg:gap-10 justify-center items-center">
           <li className="border-black border-2">Пункт 1</li>
@@ -20,7 +20,6 @@ function Header() {
               alt="logo"
               width="250"
               height="250"
-              sizes="25vw"
               className="absolute -translate-x-1/2 top-1/3 transform -mt-10"
               priority
             />
@@ -36,7 +35,7 @@ function Header() {
           width="250"
           height="250"
           sizes="25vw"
-          className="absolute right-0 top-4 max-[600px]:top-12 md:hidden w-1/4"
+          className="absolute right-4 top-4 max-[600px]:top-12 md:hidden w-1/4"
           priority
         />
       </div>
@@ -54,19 +53,21 @@ function Footer() {
 
 export default function Home() {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <Header />
       <main className="pt-24 md:pt-32">
         <div className="flex flex-col">
-          <Image
-            src="/plant1.jpg"
-            alt="Plant logo"
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="w-full h-auto z-11 z-10 h-60vh"
-            priority
-          />
+          <div className="flex bg-red h-40vh md:h-70vh">
+            <Image
+              src="/plant1.jpg"
+              alt="Plant logo"
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-full h-auto z-10 h-60vh"
+              priority
+            />
+          </div>
           <div className="flex flex-col md:flex-row md:h-60vh md:h-50vh overflow-hidden">
             <div className="ml-auto mr-auto w-4/5 md:w-1/3 md:mt-auto md:mb-auto md:ml-auto flex flex-center items-center flex-col">
               <h1 className="text-xl mb-5">Georgian House</h1>
